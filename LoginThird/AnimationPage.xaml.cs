@@ -38,7 +38,7 @@ namespace LoginThird
 
             timer = new DispatcherTimer();
             timer.Tick += drawLine;
-            timer.Interval = TimeSpan.FromMilliseconds(17);
+            timer.Interval = TimeSpan.FromMilliseconds(10);
 
             lineList = new List<Line>();
         }
