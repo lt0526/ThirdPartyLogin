@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="LoginThird.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LoginThird"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="NickName:"/>
+        <TextBlock x:Name="NickName" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100, 0, 0, 0"/>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Text="Location:" Margin="0, 30, 0, 0"/>
+        <TextBlock x:Name="Location" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100, 30, 0, 0"/>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Text="Id:" Margin="0, 60, 0, 0"/>
+        <TextBlock x:Name="Id" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100, 60, 0, 0"/>
+
+        <Button Margin="40" Click="QQBtn_Click">
+            <Image Source="/Assets/Tencent_QQ.png" Width="100" Height="100"/>
+        </Button>
+        <Button Margin="40" Click="WeiboBtn_Click" HorizontalAlignment="Right">
+            <Image Source="/Assets/weibo.jpg" Width="100"/>
+        </Button>
+
+        <ProgressRing x:Name="MyProgressBar" IsActive="False" Width="200" Height="200"/>
+
+        <Button Content="Push" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="PushBtn_Click"/>
+    </Grid>
+</Page>
